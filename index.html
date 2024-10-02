@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+    <div id="result">
+        <p id="output"></p>
+    </div>
+    <div id="buttons">
+        <div class="lay">
+            <button onclick="clean()">AC</button>
+            <button value="^" onclick="insert('^')">^</button>
+            <button value="%" onclick="insert('%')">%</button>
+            <button value="/" onclick="insert('/')">/</button>
+        </div>
+        <div class="lay">
+            <button value=7 onclick="insert(7)">7</button>
+            <button value=8 onclick="insert(8)">8</button>
+            <button value=9 onclick="insert(9)">9</button>
+            <button id="x" onclick="insert('x')">x</button>
+        </div>
+        <div class="lay">
+            <button value="4" onclick="insert(4)">4</button>
+            <button value="5" onclick="insert(5)">5</button>
+            <button value="6" onclick="insert(6)">6</button>
+            <button value="-" onclick="insert('-')">-</button>
+        </div>
+        <div class="lay">
+            <button value="1" onclick="insert(1)">1</button>
+            <button value="2" onclick="insert(2)">2</button>
+            <button value="3" onclick="insert(3)">3</button>
+            <button value="+" onclick="insert('+')">+</button>
+        </div> 
+        <div class="lay">
+            <button id="back" onclick="remove()">C</button>
+            <button value="0" onclick="insert(0)">0</button>
+            <button value="." onclick="insert('.')">.</button>
+            <button value="=" onclick="result()">=</button>
+        </div>  
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

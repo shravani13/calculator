@@ -1,0 +1,48 @@
+body{
+    margin:0;
+    background-color: white;
+}
+#container{
+    margin: 10% 40%;
+    /* border: 1px solid pink; */
+    height: 40em;
+    width: 20em;
+    background-color: black;
+    border-radius: 2em;
+}
+#result{
+    /* border: 1px solid blue; */
+    margin: 0;
+    height: 15em;    
+    position: relative;
+    overflow: hidden;
+    
+}
+#output{
+    margin: 0;
+    color: orange;
+    font-size: 2em;
+    font-weight: bold;
+    right: 0.5em;
+    bottom: 0;
+    /* border: 1px solid green; */
+    
+    position: absolute;
+}
+#buttons{
+    background-color: rgb(72, 69, 69);
+    border-radius: 2em;
+    padding: 1em;
+}
+.lay{
+    display: flex;
+}
+button{
+    background-color: black;
+    color: white;
+    width: 5em;
+    height: 5em;
+    border-radius: 1.5em;
+    border: 0;
+    margin: 0.5em;
+}
